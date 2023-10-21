@@ -293,34 +293,25 @@ animation-packetloss-framerate = 500
 [module/bspwm]
 type = internal/bspwm
 
-ws-icon-0 = TERM;%{F#83a598}
-ws-icon-1 = WEBS;%{F#fb4934}
-ws-icon-2 = CODE;%{F#fe8019}
-ws-icon-3 = MISC;%{F#928374}
-ws-icon-4 = EDIT;%{F#fabd2f}
-ws-icon-5 = CHAT;%{F#ebdbb2}
-ws-icon-6 = FIGM;%{F#d3869b}
-ws-icon-7 = DOCS;%{F#8ec07c}
-ws-icon-8 = WRIT;%{F#fabd2f}
 ws-icon-default = 
 
 label-focused = %icon%  %name%
-label-focused-background = ${colors.background-alt}
-label-focused-foreground = ${colors.blue-alt}
+label-focused-background = ${colors.background}
+label-focused-foreground = ${colors.foreground}
 label-focused-overline= ${colors.foreground}
 label-focused-padding = 1
 
 label-occupied = %{T3}聯%{T-}
 label-occupied-background = ${colors.background}
-label-occupied-foreground = ${colors.green-alt}
+label-occupied-foreground = ${colors.foreground}
 label-occupied-padding = 1
 
 label-urgent = %{T3}聯%{T-}
 label-urgent-background = ${colors.background}
-label-urgent-foreground = ${colors.red-alt}
+label-urgent-foreground = ${colors.red}
 label-urgent-padding = 1
 
 label-empty = %{T3}輦%{T-}
-label-empty-foreground = ${colors.foreground-alt}
+label-empty-foreground = ${colors.foreground}
 label-empty-background = ${colors.background}
 label-empty-padding = 1

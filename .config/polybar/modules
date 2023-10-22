@@ -10,24 +10,13 @@ content-padding = 2
 
 click-left = ~/.config/rofi/scripts/power 
 
-
-[module/transparent]
-type = custom/text
-content = "random"
-content-font = 2
-
-content-background = ${colors.background-transparent}
-content-foreground = ${colors.background-transparent}
-content-padding = 2
-
 [module/spotify]
 type = custom/script
-interval = 1
 format = <label>
-format-background = ${colors.background}
-format-foreground = ${colors.foreground}
+format-background = ${colors.foreground}
+format-foreground = ${colors.background}
 format-padding = 1
-label = %output:0:60:...%
+label = %output:0:40:...%
 tail=true
 exec = python3 ~/.config/polybar/scripts/mediaplayer.py
 ;control players (optional)
@@ -317,25 +306,25 @@ animation-packetloss-framerate = 500
 [module/bspwm]
 type = internal/bspwm
 
-ws-icon-default = 
+ws-icon-default = 
 
 label-focused = %icon% %name%
 label-focused-background = ${colors.background}
 label-focused-foreground = ${colors.red}
-label-focused-underline= ${colors.foreground}
+label-focused-underline= ${colors.red}
 label-focused-padding = 1
 
-label-occupied = %{T3}聯%{T-}
+label-occupied = %icon% %name%
 label-occupied-background = ${colors.background}
 label-occupied-foreground = ${colors.foreground}
 label-occupied-padding = 1
 
-label-urgent = %{T3}聯%{T-}
+label-urgent = %icon% %name%
 label-urgent-background = ${colors.background}
 label-urgent-foreground = ${colors.red}
 label-urgent-padding = 1
 
-label-empty = %{T3}輦%{T-}
+label-empty = %icon% %name%
 label-empty-foreground = ${colors.foreground}
 label-empty-background = ${colors.background}
 label-empty-padding = 1

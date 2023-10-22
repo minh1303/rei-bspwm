@@ -64,7 +64,6 @@ class PlayerManager:
 
     def write_output(self, text, player):
         logger.debug(f"Writing output: {text}")
-
         sys.stdout.write(text + "\n")
         sys.stdout.flush()
 
@@ -107,13 +106,16 @@ class PlayerManager:
         player_name = player.props.player_name
         title = player.get_title()
 
+        if player.props.status != "Playing" and player.props.status != "Paused":
+            self.write_output("Not playing", player)
+
         track_info = ""
         if player_name == "spotify" and "mpris:trackid" in metadata.keys() and ":ad:" in player.props.metadata["mpris:trackid"]:
             track_info = "Advertisement"
         elif title is not None:
             track_info = title
         else:
-            track_info = title
+            track_info = ""
 
         if track_info:
             if player.props.status == "Playing":
@@ -122,6 +124,7 @@ class PlayerManager:
                 track_info = " " + track_info
         # only print output if no other player is playing
         current_playing = self.get_first_playing_player()
+
         if current_playing is None or current_playing.props.player_name == player.props.player_name:
             self.write_output(track_info, player)
         else:
@@ -166,12 +169,12 @@ def main():
     # Logging is set by default to WARN and higher.
     # With every occurrence of -v it's lowered by one
     logger.setLevel(max((3 - arguments.verbose) * 10, 0))
-
     logger.info("Creating player manager")
     if arguments.player:
         logger.info(f"Filtering for player: {arguments.player}")
     player = PlayerManager(arguments.player)
     player.run()
+    
 
 
 if __name__ == "__main__":

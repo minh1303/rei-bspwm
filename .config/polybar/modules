@@ -23,8 +23,8 @@ tail=true
 exec = python3 ~/.config/polybar/scripts/mediaplayer.py
 ;control players (optional)
 click-left = playerctl play-pause 
-click-right = playerctl next 
-click-middle = playerctl previous 
+scroll-up = playerctl next 
+scroll-down = playerctl previous 
 
 [module/pulseaudio]
 type = internal/pulseaudio

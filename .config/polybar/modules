@@ -1,12 +1,11 @@
 
 [module/power]
 type = custom/text
-content = 
-content-font = 2
+content = %{T5}
 
 content-background = ${colors.background}
 content-foreground = ${colors.red}
-content-padding = 2
+content-padding = 1
 
 click-left = ~/.config/rofi/scripts/power 
 
@@ -135,7 +134,7 @@ format-discharging-padding = 1
 ;   <bar-capacity>
 ;   <ramp-capacity>
 format-full = <label-full>
-format-full-prefix = %{T3}%{T-}
+format-full-prefix = %{T-}
 format-full-background = ${colors.background}
 format-full-foreground = ${colors.foreground}
 
@@ -219,7 +218,7 @@ label = " %percentage%%"
 [module/date]
 type = internal/date
 date-alt =%{T3}%{T-} %d %B %Y
-date =%{T3}%{T-} %H:%M, %{F#ed8796}%A%{F-}
+date = %{T3}%{T-} %{F#ed8796}%A%{F-}, %H:%M
 interval = 5
 ;format-underline = ${colors.white}
 ;format-background = ${colors.black}

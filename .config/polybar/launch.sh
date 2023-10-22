@@ -10,6 +10,8 @@ killall -q polybar
 while pgrep -u $UID x polybar > /dev/null; do sleep 1; done
 
 # Launch bar on primary monitor 
-polybar -c ~/.config/polybar/config.ini main &
+polybar -c ~/.config/polybar/config.ini left &
+polybar -c ~/.config/polybar/config.ini mid &
+polybar -c ~/.config/polybar/config.ini right &
 
 echo "Bar launched..."

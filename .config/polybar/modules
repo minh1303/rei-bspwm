@@ -11,12 +11,21 @@ content-padding = 2
 click-left = ~/.config/rofi/scripts/power 
 
 
+[module/transparent]
+type = custom/text
+content = "random"
+content-font = 2
+
+content-background = ${colors.background-transparent}
+content-foreground = ${colors.background-transparent}
+content-padding = 2
+
 [module/spotify]
 type = custom/script
 interval = 1
 format = <label>
-format-background = ${colors.foreground}
-format-foreground = ${colors.background}
+format-background = ${colors.background}
+format-foreground = ${colors.foreground}
 format-padding = 1
 label = %output:0:60:...%
 tail=true

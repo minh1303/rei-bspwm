@@ -83,25 +83,10 @@ super + {_,shift + }{1-9,0}
 # preselect
 #
 
-# preselect the direction
-super + ctrl + {h,j,k,l}
-	bspc node -p {west,south,north,east}
 
-# preselect the ratio
-super + ctrl + {1-9}
-	bspc node -o 0.{1-9}
 
-# cancel the preselection for the focused node
-super + ctrl + space
-	bspc node -p cancel
 
-# cancel the preselection for the focused desktop
-super + ctrl + shift + space
-	bspc query -N -d | xargs -I id -n 1 bspc node id -p cancel
-
-#
 # move/resize
-#
 
 # expand a window by moving one of its side outward
 super + alt + {h,j,k,l}
@@ -117,29 +102,6 @@ super + {Left,Down,Up,Right}
 #
 # Special hotkeys
 #
-
-# Multimedia keys
-XF86AudioRaiseVolume
-  amixer -q set Master 5%+ unmute
-
-# Still multimedia
-XF86AudioLowerVolume
-  amixer -q set Master 5%- unmute
-
-# still
-XF86AudioMute
-  amixer -D pulse sset Master toggle-mute
-  
-# amixer -q set Master toggle
-# Simple amixer command seems to have problems unmuting device
-
-# Brightness up
-XF86MonBrightnessUp
-  xbacklight -inc 5
-
-# And brightness down
-XF86MonBrightnessDown
-  xbacklight -dec 5
 
 # Screenshot
 Print

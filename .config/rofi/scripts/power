@@ -1,0 +1,25 @@
+#!/bin/bash
+
+options=$(echo -e " Lock\n  Logout\n  Suspend\n  Restart\n  Poweroff")
+
+selected_option=$(echo -e "$options" | rofi -dmenu -i -mesg "Power Menu" -config ~/.config/rofi/power.rasi)
+
+# Handle the selected option
+case $selected_option in
+    "  Logout")
+        pkill -KILL -u "$USER"
+        ;;
+    "  Suspend")
+        systemctl suspend
+        ;; 
+    "  Restart")
+        systemctl reboot
+        ;;
+    "  Poweroff")
+        systemctl poweroff
+        ;;
+    " Lock")
+	swaylock
+	;;
+esac
+

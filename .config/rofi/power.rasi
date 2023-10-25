@@ -3,7 +3,7 @@
 * {
   /* Default background color */
   background-color: #282738;
-  text-color:       #E5B9C6;
+  text-color:       #848db8;
   font: "JetBrainsMono Bold 10";
 }
 
@@ -98,67 +98,67 @@ element-text {
 
 element normal.normal {
     background-color: #353446;
-    text-color:       #E5B9C6;
+    text-color:       #848db8;
 }
 element.normal.urgent {
     background-color: #353446;
-    text-color:       #E5B9C6;
+    text-color:       #848db8;
 }
 element.normal.active {
     background-color: #353446;
-    text-color:       #E5B9C6;
+    text-color:       #848db8;
 }
 element.selected.normal {
-    background-color: #E5B9C6;
-    border-color: #E5B9C6;
-    text-color:       #E5B9C6;
+    background-color: #848db8;
+    border-color: #848db8;
+    text-color:       #848db8;
 }
 element.selected.urgent {
-    background-color: #E5B9C6;
-    border-color: #E5B9C6;
-    text-color:       #E5B9C6;
+    background-color: #848db8;
+    border-color: #848db8;
+    text-color:       #848db8;
 }
 element.selected.active {
-    background-color: #E5B9C6;
-    border-color: #E5B9C6;
-    text-color:       #E5B9C6;
+    background-color: #848db8;
+    border-color: #848db8;
+    text-color:       #848db8;
 }
 element.alternate.normal {
     background-color: #353446;
-    text-color:       #E5B9C6;
+    text-color:       #848db8;
 }
 element.alternate.urgent {
     background-color: #353446;
-    text-color:       #E5B9C6;
+    text-color:       #848db8;
 }
 element.alternate.active {
     background-color: #353446;
-    text-color:       #E5B9C6;
+    text-color:       #848db8;
 }
 
 
 element-text.selected.normal {
-    background-color: #E5B9C6;
-    border-color: #E5B9C6;
+    background-color: #848db8;
+    border-color: #848db8;
     text-color:       #282738;
     font: "JetBrains Mono Medium";
 }
 element-text.selected.urgent {
-    background-color: #E5B9C6;
-    border-color: #E5B9C6;
+    background-color: #848db8;
+    border-color: #848db8;
     text-color:       #282738;
     font: "JetBrains Mono Medium";
 }
 element-text.selected.active {
-    background-color: #E5B9C6;
-    border-color: #E5B9C6;
+    background-color: #848db8;
+    border-color: #848db8;
     text-color:       #282738;
     font: "JetBrains Mono Medium";
 }
 
 
 button {
-    text-color: #E5B9C6;
+    text-color: #848db8;
     border:       0px 0px 5px ;
     border-color: #282738;
     border-radius:    10px 10px 0 0;
@@ -166,7 +166,7 @@ button {
     horizontal-align: 0.5;
 }
 button selected.normal {
-    text-color: #E5B9C6;
+    text-color: #848db8;
     margin: 0px;
     padding: 0px;
     border:     5px 5px 5px 5px ;
@@ -182,5 +182,5 @@ entry {
     background-color: #353446;
     border:        10px;
     border-radius: 2px 2px 2px 2px;
-    text-color: #E5B9C6;
+    text-color: #848db8;
   }

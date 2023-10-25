@@ -9,3 +9,5 @@
 - **File Manager** • [Thunar](https://docs.xfce.org/xfce/thunar/start) 📂
 - **Audio visualizer** • [cava](https://github.com/karlstav/cava) 🎵
 - **GTK Theme** • [Catppuccin Mocha](https://github.com/catppuccin/gtk) 👾
+
+![SHOWCASE](/screenshot/output.png)
